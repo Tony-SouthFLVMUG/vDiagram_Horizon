@@ -1,5 +1,5 @@
-# vDiagram2.0
-vDiagram 2.0 based off Alan Renouf's vDiagram
+# vDiagram Horizon 1.0
+vDiagram Horizon 1.0 based off Alan Renouf's vDiagram
 
 ## SYNOPSIS
 vDiagram Visio Drawing Tool
@@ -15,16 +15,16 @@ Powershell script that will capture and draw in Visio a VMware Horizon Infrastru
 ## HOW TO RUN SCRIPT
 	1. From within Windows, click on the start button.
 	2. Type Powershell and right click on the search results and select "Run as administrator".
-	3. At the Powershell command prompt navigate to the the directory where you have unzipped the vDiagram files. Example: "cd c:\Users\<your user name>\Downloads\vDiagram_2.0.X"
-	4. Type the name of the Powershell script. Example: "vDiagram_2.0.X.ps1"
+	3. At the Powershell command prompt navigate to the the directory where you have unzipped the vDiagram files. Example: "cd c:\Users\<your user name>\Downloads\vDiagram_Horizon_1.0.X"
+	4. Type the name of the Powershell script. Example: "vDiagram_Horizon_1.0.X.ps1"
 	5. Follow directions listed below in "Usage Notes".
 
 ## NOTES
-	File Name	: vDiagram_2.0.12.ps1
+	File Name	: vDiagram_Horizon_1.0.1.ps1
 	Author		: Tony Gonzalez
 	Author		: Jason Hopkins
 	Based on	: vDiagram by Alan Renouf
-	Version		: 2.0.12
+	Version		: 1.0.1
 
 ## USAGE NOTES
 	Directions:
@@ -60,68 +60,5 @@ Powershell script that will capture and draw in Visio a VMware Horizon Infrastru
 	6. Click on "Open Visio Drawing" button once "Draw Visio" button says it has completed.
 
 ## CHANGE LOG
-	- 09/12/2021 - v2.0.12
-		Added option to choose between vDiagram Visio Shapes and VMware Validated Design Shapes
-
-	- 10/07/2020 - v2.0.11
-		Resolved reported issue with standalone ESXi Host.
-		Sorted Datastores by name accending.
-
-	- 04/09/2020 - v2.0.10
-		Added PowerCLI module version check.
-		Added PowerCLI module install if missing.
-		Added PowerCLI module upgrade to latest if desired.
-		Added device count to capture progression.
-		Added device count to draw progression.
-		Added additional attributes to shapes.
-		Added folder hierarchy to Visio drawing.
-		Added DRS Rules hierarchy to Visio drawing.
-		Added Resource Pool hierachy to Visio drawing.
-		Script now auto hides errors.
-		-debug was added to parameters to allow for troubleshooting. To use open Powershell browse to script directory and enter script name -debug ( Example: c:\scripts\vDiagram_2.0.10.ps1 -debug )
-		-logcapture was added to parameters to allow for troubleshooting. To use open Powershell browse to script directory and enter script name -debug ( Example: c:\scripts\vDiagram_2.0.10.ps1 -logcapture ). Log capture will be placed in the same directory where script was ran from.
-		-logdraw was added to parameters to allow for troubleshooting. To use open Powershell browse to script directory and enter script name -debug ( Example: c:\scripts\vDiagram_2.0.10.ps1 -logdraw ). Log draw will be placed in the same directory where script was ran from.
-		All 3 parameters can be used at the same time. To use open Powershell browse to script directory and enter script name -debug ( Example: c:\scripts\vDiagram_2.0.10.ps1 -debug -logcapture -logdraw )
-		
-	- 09/25/2019 - v2.0.9
-		Moved from Get-<Item> to Get-View.
-		Added Pop-up bubbles to all items in GUI to provide direction.
-		
-	- 07/17/2019 - v2.0.8
-		Typo found out capture output. Added CpuHotRemoveEnabled, CpuHotAddEnabled & MemoryHotAddEnabled to VM & Template outputs.
-		Added additional properties to VMHost object.
-		
-	- 04/15/2019 - v2.0.7
-		New drawing added for Linked vCenters.
-		
-	- 04/06/2019 - v2.0.6
-		New drawing added for VMs with snapshots.
-
-	- 10/22/2018 - v2.0.5
-		Dupliacte Resource Pools for same cluster were being drawn in Visio.
-		
-	- 10/22/2018 - v2.0.4
-		Slight changes post presenting at Orlando VMUG UserCon
-		Removed target vCenter box
-		Cleaned up global variables for CSVs & vCenter
-		File saves as .vsd then converts to .vsdx and deletes .vsd
-		File save now in .vsdx vs .vsd as it saves as a smaller file
-		Changed date format of Visio file from yyyy_MM_dd-HH_mm to yyyy-MM-dd_HH-mm
-				
-	- 10/17/2018 - v2.0.3
-		Fixed IP and MAC address capture on VMHost and VMs, not listing all IPs and MACs
-	
-	- 10/02/2018 - v2.0.2
-		Added Open CSV Folder Button to Capture Tab
-		Once Open CSV Folder or OPen Visio Button is clicked form now resets
-		Separated sections into regions for ease of modification later
-	
-	- 04/12/2018 - v2.0.1
-		Added MAC Addresses to VMs & Templates
-		Added a check to see if prior CSVs are still present
-		Added option to copy prior CSVs to new folder
-		Consolidate the object placement into functions for ease of management
-
-	- 04/11/2018 - v2.0.0
-		Presented as a Community Theater Session at South Florida VMUG
-		Feature enhancement requests collected
+	- 09/12/2021 - v1.0.1
+		Initial release
